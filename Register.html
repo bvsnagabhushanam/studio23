@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+</head>
+<style>
+
+.group{
+border:2px solid red;
+background-color:lightblue;
+
+}
+.button1 button{
+
+text-align:center;
+}
+.input-block-level {
+    display: block;
+    width: 400px;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	height:200px;
+}
+.button1 button{
+
+width:200px;
+text-transform:Uppercase;
+font-size:20px;
+
+}
+p:nth-child(2) {
+    color:red;
+}
+</style>
+<body>
+    <div class ="container-fluid group">
+	<div class ="container">
+	<div class ="row">
+	<div class ="col-md-6 ">
+	<form class="form-inline" action="/action_page.php">
+  <div class="form-group">
+    <label for="firstName">FirstName:</label>
+    <input type="FirstName" class="form-control" id="firstName"placeholder="FirstName">
+  </div><br>
+  <div class="form-group">
+    <label for="LastName">LastName:</label>
+    <input type="LastName" class="form-control" id="LastName"placeholder="LastName">
+  </div><br>
+  <div class="form-group">
+    
+   <form action="/action_page.php">
+ <label for ="qualification">Date Of Register</label>
+  <input type="date" name="bday">
+  
+</form>
+  </div><br>
+ 
+   
+</div>
+	<div class ="col-md-6 ">
+	<form class="form-inline" action="/action_page.php">
+  <div class="qualification">
+  <label for ="qualification">Qualification</label>
+  <select>
+  <option value="Pg">PG</option>
+  <option value="Engineering">Engineering</option>
+  <option value="Graduation">Graduation</option>
+  <option value="courses">courses</option>
+</select>
+</div>
+  
+  <div class="Place of Register">
+  <label for ="Register">Place Of Register</label>
+  <select>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="Mysore">Mysore</option>
+  <option value="Vijayawada">Vijayawada</option>
+</select>
+</div>
+ <div class="form-group">
+ <label for ="Training">Training if any</label> <input type="checkbox"> yes <input type="checkbox"> No
+    
+  </div><br>
+   <div class="form-group">
+ <form action="upload.php" method="post" enctype="multipart/form-data">
+<input type="file" name="fileToUpload" id="fileToUpload">
+<input type="submit" value="Upload Image" name="submit">
+</form>
+  </div><br>
+  </form>
+ 
+</form>
+	
+</div>
+	</div>
+	</div>
+	</div>
+	<div class ="container-fluid group">
+	<div class ="container">
+	<div class ="row">
+	<div class ="col-md-12">
+	<form class="form-inline" action="/action_page.php">
+  <div class="form-group">
+    <label for="firstName">Contact Details</label>
+    
+  </div><br>
+  <div class="Mobile">
+ 
+ <label for="phonenum">Home Number :</label>
+  <input id="phonenum" type="tel" pattern="^\d{4}-\d{2}-\d{4}$" required placeholder="Home"><br>
+  <label for="phonenum">Mobile Number :</label>
+  <input id="phonenum" type="tel" pattern="^\d{4}-\d{2}-\d{4}$" required placeholder="Mobile">
+</div>
+  <div class="form-group">
+  <form>
+    <label for="Permanent">Permanent Address</label>
+    <div class="text-area"> 
+	<textarea placeholder="Address" class="input-block-level" style="margin: 0px -3px 0px 0px;""></textarea><br>
+	
+  
+   </div>
+  </form>
+</div>
+	
+</form>
+	
+</div>
+	</div>
+	</div>
+	</div>
+	<div class ="container-fluid group">
+	<div class ="container">
+	<div class ="row">
+	<div class ="col-md-12">
+	<form class="form-inline" action="/action_page.php">
+  <div class="form-group">
+    <label for="firstName">Other Details</label>
+    
+  </div><br>
+  <div class="form-group">
+  
+  <form>
+   <form action="/action_page.php" method="get">
+   Any Previous Job
+  <input type="checkbox" name="vehicle" value="Bike"> YES
+  <input type="checkbox" name="vehicle" value="Car" checked> NO
+  <input type="checkbox" name="vehicle" value="Car" checked> Experience<br>
+  
+</form>
+ <div class="qualification">
+  <label for ="qualification">job</label>
+  <select>
+  <option value="volvo">Fresher</option>
+  <option value="saab">Job Experience With Gap</option>
+  <option value="mercedes">Change of Job</option>
+  
+</select><br>
+
+</div>
+	<p><strong>Note:</stong><br>Level 0:Fresher</p>
+	<p>level 1:  Job Experience With Gap</p>
+	<p>Change of Job</p>
+	
+  </div><br>
+  
+   
+  </form>
+</div>
+	
+</form>
+	
+</div>
+	</div>
+	</div>
+	<div class ="container-fluid group">
+	<div class ="container">
+	<div class ="row">
+	<div class ="col-md-12 ">
+	<form class="form-inline" action="/action_page.php">
+  <div class="form-group">
+    <label for="firstName">What do you expect from us</label>
+    
+  </div><br>
+  <div class="form-group">
+  
+  <form>
+   <form action="/action_page.php" method="get">
+   
+  <input type="checkbox" name="vehicle" value="Bike"> Career Counselling
+  <input type="checkbox" name="vehicle" value="Car" checked> Technical Training
+  <input type="checkbox" name="vehicle" value="Car" checked> Seeking for Job<br>
+  
+</form>
+
+	
+	
+  </div><br>
+  
+   
+  </form>
+</div>
+	
+</form>
+	
+</div>
+	</div>
+	</div>
+	<div class ="container-fluid  group">
+	<div class ="container">
+	<div class ="row">
+	<div class ="col-md-12 button1">
+	<form class="form-inline" action="/action_page.php">
+<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+	
+	
+  </div><br>
+  
+   
+  </form>
+</div>
+	
+</form>
+	
+</div>
+	</div>
+	</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "57372084829",
+    "firebase_url": "https://milestone2-9a2b9.firebaseio.com",
+    "project_id": "milestone2-9a2b9",
+    "storage_bucket": "milestone2-9a2b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57372084829:android:eeb5750ee5609e83",
+        "android_client_info": {
+          "package_name": "milestone23.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57372084829-17d3tt8cv6h2jpgctdmakiufub2dmat7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvu2UIYC_EGpkQBtnQTbhgcbTH88031vc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

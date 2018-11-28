@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login.html</title>
+    
+</head>
+
+<body>
+    <form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br />
+    <input type="button" value="button"  onclick="javascript:validate()" />
+	<input type="button" value="button"  onclick="javascript:signup()" />
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "workshop"
+       && document.getElementById("text2").value == "workshop" )
+    {
+        alert( "validation succeeded" );
+        location.href="index.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        location.href="fail.html";
+    }
+}
+function signup(){
+location.href="Register.html";
+}
+</script>
+	
+	
+	</body>
+	</html>
